@@ -29,10 +29,11 @@ class _SplashPageState extends State<SplashPage> {
         width: double.maxFinite,
         child: DecoratedBox(
           decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('assets/images/backgrounds.png'),
-              fit: BoxFit.cover,
-            ),
+            // image: DecorationImage(
+            //   image: AssetImage('assets/images/backgrounds.png'),
+            //   fit: BoxFit.cover,
+            // ),
+            color: AppColors.gray,
           ),
           child: Center(
             child: Text(

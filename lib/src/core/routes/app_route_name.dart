@@ -6,4 +6,6 @@ final class AppRouteName {
 
   static const String splashPage = '/splashPage';
   static const String registorPage = '/registorPage';
+  static const String homePage = '/homePage';
+  static const String eduNavigationBarPage = '/eduNavigationBarPage';
 }

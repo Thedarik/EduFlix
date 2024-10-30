@@ -1,4 +1,4 @@
-import 'package:eduflix/src/core/style/colors.dart';
+import 'package:EduFlix/src/core/style/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -240,10 +240,10 @@ final class AppTextStyle extends TextTheme {
       );
   @override
   TextStyle? get authTitleSmall => TextStyle(
-        fontWeight: FontWeight.w500,
-        fontSize: FontSize.size30,
+        fontWeight: FontWeight.w900,
+        fontSize: FontSize.size8,
         fontFamily: 'Kanit',
-        color: AppColors.black,
+        color: AppColors.white,
       );
 }
 
@@ -251,6 +251,7 @@ final class AppTextStyle extends TextTheme {
 final class FontSize {
   const FontSize._();
 
+  static double size8 = 8.sp;
   static double size10 = 10.sp;
   static double size11 = 11.sp;
   static double size12 = 12.sp;

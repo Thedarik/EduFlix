@@ -1,4 +1,4 @@
-package com.example.eduflix
+package com.example.EduFlix
 
 import io.flutter.embedding.android.FlutterActivity
 

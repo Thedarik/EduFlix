@@ -1,4 +1,4 @@
-# eduflix
+# EduFlix
 
 A new Flutter project.
 

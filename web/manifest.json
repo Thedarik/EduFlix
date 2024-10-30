@@ -1,6 +1,6 @@
 {
-    "name": "eduflix",
-    "short_name": "eduflix",
+    "name": "EduFlix",
+    "short_name": "EduFlix",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

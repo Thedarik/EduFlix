@@ -1,5 +1,5 @@
-import 'package:eduflix/src/core/routes/app_route_name.dart';
-import 'package:eduflix/src/core/routes/app_router.dart';
+import 'package:EduFlix/src/core/routes/app_route_name.dart';
+import 'package:EduFlix/src/core/routes/app_router.dart';
 import 'package:flutter/material.dart';
 
 class AppMaterialContext extends StatelessWidget {
@@ -9,7 +9,8 @@ class AppMaterialContext extends StatelessWidget {
   Widget build(BuildContext context) => Builder(
         builder: (context) => MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'Audio Book',
+          title: 'EduFlix',
+          themeAnimationStyle: AnimationStyle(duration: Duration(seconds: 4)),
           darkTheme: ThemeData.dark(),
           initialRoute: AppRouteName.splashPage,
           onGenerateRoute: AppRouter().onGenerateRoute,

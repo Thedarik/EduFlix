@@ -1,4 +1,4 @@
-import 'package:eduflix/src/core/widgets/app_material_context.dart';
+import 'package:EduFlix/src/core/widgets/app_material_context.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

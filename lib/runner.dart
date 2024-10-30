@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:eduflix/setup.dart';
+import 'package:EduFlix/setup.dart';
 import 'package:flutter/services.dart';
 import 'package:l/l.dart';
 

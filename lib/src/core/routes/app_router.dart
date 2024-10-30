@@ -1,5 +1,6 @@
-import 'package:eduflix/src/core/style/colors.dart';
-import 'package:eduflix/src/feature/auth/presentation/pages/splash_page.dart';
+import 'package:EduFlix/src/core/style/colors.dart';
+import 'package:EduFlix/src/feature/auth/presentation/pages/registor_page.dart';
+import 'package:EduFlix/src/feature/auth/presentation/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
 import 'app_route_name.dart';
@@ -10,6 +11,11 @@ final class AppRouter<T extends Object?> {
       case AppRouteName.splashPage:
         return _buildRoute(
           builder: const SplashPage(),
+          settings: settings,
+        );
+      case AppRouteName.registorPage:
+        return _buildRoute(
+          builder: const RegistorPage(),
           settings: settings,
         );
 

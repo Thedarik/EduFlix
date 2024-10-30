@@ -8,13 +8,13 @@ sealed class AppImages {
 
   /// SVG
   static final splashLogo = SvgPicture.asset(
-    'assets/icons/eduflixLogo.svg',
+    'assets/icons/EduFlixLogo.svg',
     height: 321.h,
     width: 321.w,
     fit: BoxFit.cover,
   );
   static final onBoardingLogo = SvgPicture.asset(
-    'assets/icons/eduflixLogo.svg',
+    'assets/icons/EduFlixLogo.svg',
     height: 300.h,
     width: 300.w,
     fit: BoxFit.cover,

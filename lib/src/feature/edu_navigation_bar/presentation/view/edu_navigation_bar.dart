@@ -13,6 +13,17 @@ class EduNavigationBar extends ConsumerStatefulWidget {
 }
 
 class _HomePageState extends ConsumerState<EduNavigationBar> {
+
+  /// Page lar shu yerga yoziladi
+  List<Widget> pages = [
+    const HomePage(),
+    const Test2(),
+    const Test2(),
+    const Test2(),
+    const Test2(),
+    const Test2(),
+    const Test2(),
+  ];
   int _selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
@@ -22,11 +33,13 @@ class _HomePageState extends ConsumerState<EduNavigationBar> {
           NavigationRail(
             selectedIndex: _selectedIndex,
             onDestinationSelected: (int index) {
+              ref.read(buttonNavigationBarController).changePage(index);
               setState(() {
                 _selectedIndex = index;
               });
             },
             labelType: NavigationRailLabelType.selected,
+            indicatorColor: AppColors.red,
             destinations: [
               NavigationRailDestination(
                 icon: SvgPicture.asset(
@@ -35,13 +48,15 @@ class _HomePageState extends ConsumerState<EduNavigationBar> {
                       const ColorFilter.mode(AppColors.gray, BlendMode.srcIn),
                   height: 24,
                 ),
+                // indicatorShape: BeveledRectangleBorder(
+                //     borderRadius: BorderRadius.circular(50)),
                 selectedIcon: SvgPicture.asset(
                   'assets/icons/dashboard.svg',
                   colorFilter:
                       const ColorFilter.mode(AppColors.white, BlendMode.srcIn),
                   height: 24,
                 ),
-                label: const Text('1'),
+                label: const Text('Dashboard'),
               ),
               NavigationRailDestination(
                 icon: SvgPicture.asset(
@@ -56,7 +71,7 @@ class _HomePageState extends ConsumerState<EduNavigationBar> {
                       const ColorFilter.mode(AppColors.white, BlendMode.srcIn),
                   height: 24,
                 ),
-                label: const Text('2'),
+                label: const Text('Courses'),
               ),
               NavigationRailDestination(
                 icon: SvgPicture.asset(
@@ -141,20 +156,7 @@ class _HomePageState extends ConsumerState<EduNavigationBar> {
             color: AppColors.white,
           ),
           Expanded(
-            child: PageView(
-              physics: const NeverScrollableScrollPhysics(),
-              controller:
-                  ref.read(buttonNavigationBarController).pageController,
-              onPageChanged: (value) {
-                ref.read(buttonNavigationBarController).changePage(value);
-              },
-
-              // Pages
-              children: const [
-                HomePage(),
-                Test2(),
-              ],
-            ),
+            child: pages[_selectedIndex],
           ),
         ],
       ),
@@ -167,7 +169,7 @@ class Test2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
         child: Text("Test2"),
       ),

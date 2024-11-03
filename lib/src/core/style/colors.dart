@@ -60,4 +60,20 @@ sealed class AppColors {
   static const cFFF500 = Color(0xFFFFF500);
   static const c42FF00 = Color(0xFF42FF00);
   static const c0057FF = Color(0xFF0057FF);
+
+  /// Color list body
+  static const l1 = Color(0xFF730517);
+  static const l2 = Color(0xFFf44560);
+  static const l3 = Color(0xFF44d1df);
+  static const l4 = Color(0xFF32a4a7);
+  static const l5 = Color(0xFF1e7069);
+
+  /// Color list
+  static const list_color = [
+    AppColors.l5,
+    AppColors.l4,
+    AppColors.l3,
+    AppColors.l2,
+    AppColors.l1,
+  ];
 }

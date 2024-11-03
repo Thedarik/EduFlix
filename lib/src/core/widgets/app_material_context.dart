@@ -11,7 +11,7 @@ class AppMaterialContext extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'EduFlix',
           themeAnimationStyle: AnimationStyle(duration: Duration(seconds: 4)),
-          darkTheme: ThemeData.dark(),
+          darkTheme: ThemeData.fallback(),
           initialRoute: AppRouteName.splashPage,
           onGenerateRoute: AppRouter().onGenerateRoute,
           builder: (context, child) => MediaQuery(

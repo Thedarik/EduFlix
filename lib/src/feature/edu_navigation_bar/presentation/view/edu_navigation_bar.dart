@@ -13,11 +13,10 @@ class EduNavigationBar extends ConsumerStatefulWidget {
 }
 
 class _HomePageState extends ConsumerState<EduNavigationBar> {
-
   /// Page lar shu yerga yoziladi
   List<Widget> pages = [
     const HomePage(),
-    const Test2(),
+    const Test2(),  
     const Test2(),
     const Test2(),
     const Test2(),
